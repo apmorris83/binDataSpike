@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const BinDoc = require('./models/bins');
 const binData = require('./data/bins.js');
 
-mongoose.connect('mongodb://localhost/bin_api', function (error) {
+mongoose.connect('mongodb://user:password@ds163940.mlab.com:63940/bins', function (error) {
     if (error) {
         console.log(error);
         return process.exit();

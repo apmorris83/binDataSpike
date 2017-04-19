@@ -3,7 +3,8 @@ const app = express();
 const apiRouter = require('./routes/api');
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost/bin_api');
+// mongoose.connect('mongodb://localhost/bin_api');
+mongoose.connect('mongodb://user:password@ds163940.mlab.com:63940/bins');
 
 app.use(function (request, response, next) {
     console.log('Received request!');
