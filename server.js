@@ -7,6 +7,10 @@ const mongoose = require('mongoose');
 var config = require('./config');
 var db = 'mongodb://user:password@ds163940.mlab.com:63940/bins';
 var PORT = config.PORT[process.env.NODE_ENV] || process.env.PORT;
+console.log('********************************');
+console.log(process.env.NODE_ENV);
+console.log(process.env.PORT);
+console.log('********************************');
 
 
 mongoose.Promise = global.Promise;
